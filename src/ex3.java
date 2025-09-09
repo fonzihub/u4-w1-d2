@@ -5,10 +5,19 @@ public class ex3 {
         Scanner scan = new Scanner(System.in);
 
         while(true){
-            System.out.println("inserisci una stringa");
+            System.out.println("Inserisci una stringa (':q' per uscire):");
             String stringa = scan.nextLine();
             if(stringa.contains(":q")) break;
 
+            // Split della stringa in caratteri
+            String[] stringaSplit = stringa.split("");
+
+            // Join dei caratteri con una virgola
+            String stringaConVirgola = String.join(",", stringaSplit);
+
+            System.out.println("Stringa con virgola: " + stringaConVirgola);
         }
+
+        scan.close();
     }
 }

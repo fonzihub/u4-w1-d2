@@ -5,18 +5,18 @@ public class ex2 {
         Scanner scan = new Scanner(System.in);
         System.out.println("scrivi un numero intero");
         int numero = scan.nextInt();
-        String stringaNumero = Integer.toString(numero);
+
 
         switch(numero){
             case 0 : {
 
-                System.out.println(stringaNumero);
+                System.out.println("zero");
             } break;
             case 1 : {
-                System.out.println(stringaNumero);
+                System.out.println("uno");
             } break;
             case 2 : {
-                System.out.println(stringaNumero);
+                System.out.println("due");
             } break;
             default :
                 System.out.println("errore");
